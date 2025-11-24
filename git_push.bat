@@ -11,6 +11,9 @@ git add .
 echo Creating commit...
 git commit -m "Update contact info and add new skills (Linux, Cybersecurity, Portfolio Analyzer)"
 
+echo Pulling from GitHub to merge changes...
+git pull origin main --allow-unrelated-histories --no-edit
+
 echo Pushing to GitHub...
 git branch -M main
 git push -u origin main

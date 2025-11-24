@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои достижения - Аносов Артём</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/achievements.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Аносов Артём</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="practice.html" class="nav-link">Практика</a>
+                <a href="coursework.html" class="nav-link">Курсовая</a>
+                <a href="#" class="nav-link active">Достижения</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="achievements-container">
+        <section class="achievements-header">
+            <h1>Мои достижения</h1>
+            <p class="achievements-subtitle">Сертификаты, дипломы и награды</p>
+            <div class="current-learning">
+                <h3>🚀 Текущие проекты</h3>
+                <p>Активно изучаю <strong>PHP 8+, Symfony 5+</strong> и работаю над расширением для парсинга данных (TensorFlow). Осваиваю облачные технологии: <strong>Kubernetes, RabbitMQ, MariaDB, Redis, Cloudflare, GCP</strong>.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Сертификатов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Конкурсов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Курсов</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter tabs -->
+        <section class="filter-section">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">Все достижения</button>
+                <button class="filter-tab" data-filter="certificates">Сертификаты</button>
+                <button class="filter-tab" data-filter="competitions">Конкурсы</button>
+                <button class="filter-tab" data-filter="education">Образование</button>
+            </div>
+        </section>
+
+        <!-- Achievements Grid -->
+        <section class="achievements-grid">
+            <!-- Stepik Сертификаты -->
+            <div class="achievement-card" data-category="certificates education">
+                <div class="certificate-preview">
+                    <div class="certificate-icon">📚</div>
+                    <div class="certificate-badge">Stepik</div>
+                </div>
+                <h3>Программирование на Python</h3>
+                <p class="achievement-type">Интерактивный курс программирования</p>
+                <p class="achievement-date">2024</p>
+                <div class="achievement-status verified">Сертифицирован</div>
+                <button class="view-certificate" data-file="avords/stepik-certificate-551-4b272cc.pdf">
+                    Посмотреть сертификат
+                </button>
+            </div>
+
+            <div class="achievement-card" data-category="certificates education">
+                <div class="certificate-preview">
+                    <div class="certificate-icon">🐍</div>
+                    <div class="certificate-badge">Stepik</div>
+                </div>
+                <h3>Python для начинающих</h3>
+                <p class="achievement-type">Основы программирования</p>
+                <p class="achievement-date">2024</p>
+                <div class="achievement-status verified">Сертифицирован</div>
+                <button class="view-certificate" data-file="avords/stepik-certificate-63054-958e0dc.pdf">
+                    Посмотреть сертификат
+                </button>
+            </div>
+
+            <div class="achievement-card" data-category="certificates education">
+                <div class="certificate-preview">
+                    <div class="certificate-icon">💻</div>
+                    <div class="certificate-badge">Stepik</div>
+                </div>
+                <h3>Веб-технологии</h3>
+                <p class="achievement-type">HTML, CSS, JavaScript</p>
+                <p class="achievement-date">2024</p>
+                <div class="achievement-status verified">Сертифицирован</div>
+                <button class="view-certificate" data-file="avords/stepik-certificate-16478-71318e5.pdf">
+                    Посмотреть сертификат
+                </button>
+            </div>
+
+            <!-- Конкурсы и олимпиады -->
+            <div class="achievement-card" data-category="competitions">
+                <div class="certificate-preview">
+                    <div class="certificate-icon">🏆</div>
+                    <div class="certificate-badge">Astra Linux</div>
+                </div>
+                <h3>Олимпиада по ОС Astra Linux</h3>
+                <p class="achievement-type">Системное администрирование</p>
+                <p class="achievement-date">2024</p>
+                <div class="achievement-status prize">1 степень</div>
+                <button class="view-certificate" data-file="avords/Astra_AAM_Diplomy_ShRD_1_stepen.pdf">
+                    Посмотреть диплом
+                </button>
+            </div>
+
+            <div class="achievement-card" data-category="competitions certificates">
+                <div class="certificate-preview">
+                    <div class="certificate-icon">📈</div>
+                    <div class="certificate-badge">Маркетинг</div>
+                </div>
+                <h3>Московские мастера</h3>
+                <p class="achievement-type">Номинация "Интернет-маркетинг"</p>
+                <p class="achievement-date">2024</p>
+                <div class="achievement-status prize">Призовое место</div>
+                <button class="view-certificate" data-file="avords/маркетинг сертификат.pdf">
+                    Посмотреть сертификат
+                </button>
+            </div>
+
+            <!-- Образовательные сертификаты -->
+            <div class="achievement-card" data-category="certificates education">
+                <div class="certificate-preview">
+                    <div class="certificate-icon">📄</div>
+                    <div class="certificate-badge">Курс</div>
+                </div>
+                <h3>Профессиональное развитие</h3>
+                <p class="achievement-type">Дополнительное образование</p>
+                <p class="achievement-date">2024</p>
+                <div class="achievement-status verified">Завершен</div>
+                <button class="view-certificate" data-file="avords/mpdf.pdf">
+                    Посмотреть сертификат
+                </button>
+            </div>
+
+            <div class="achievement-card" data-category="certificates education">
+                <div class="certificate-preview">
+                    <div class="certificate-icon">📋</div>
+                    <div class="certificate-badge">Курс</div>
+                </div>
+                <h3>Техническая подготовка</h3>
+                <p class="achievement-type">Практические навыки</p>
+                <p class="achievement-date">2024</p>
+                <div class="achievement-status verified">Завершен</div>
+                <button class="view-certificate" data-file="avords/mpdf (1).pdf">
+                    Посмотреть сертификат
+                </button>
+            </div>
+
+            <div class="achievement-card" data-category="certificates education">
+                <div class="certificate-preview">
+                    <div class="certificate-icon">🔧</div>
+                    <div class="certificate-badge">Курс</div>
+                </div>
+                <h3>Системный анализ</h3>
+                <p class="achievement-type">Аналитические методы</p>
+                <p class="achievement-date">2024</p>
+                <div class="achievement-status verified">Завершен</div>
+                <button class="view-certificate" data-file="avords/mpdf (2).pdf">
+                    Посмотреть сертификат
+                </button>
+            </div>
+
+            <div class="achievement-card" data-category="certificates education">
+                <div class="certificate-preview">
+                    <div class="certificate-icon">⚙️</div>
+                    <div class="certificate-badge">Курс</div>
+                </div>
+                <h3>Проектирование систем</h3>
+                <p class="achievement-type">Архитектура ПО</p>
+                <p class="achievement-date">2024</p>
+                <div class="achievement-status verified">Завершен</div>
+                <button class="view-certificate" data-file="avords/mpdf (3).pdf">
+                    Посмотреть сертификат
+                </button>
+            </div>
+
+            <!-- Текущие проекты -->
+            <div class="achievement-card current-project" data-category="education">
+                <div class="certificate-preview">
+                    <div class="certificate-icon">🐘</div>
+                    <div class="certificate-badge">В процессе</div>
+                </div>
+                <h3>Изучение PHP 8+ и Symfony</h3>
+                <p class="achievement-type">Современная веб-разработка</p>
+                <p class="achievement-date">2024-2025</p>
+                <div class="achievement-status in-progress">В процессе</div>
+                <p class="project-description">Изучаю PHP 8+, Symfony 5+, Doctrine для создания веб-приложений. Работаю над расширением для парсинга данных (TensorFlow).</p>
+            </div>
+
+            <div class="achievement-card current-project" data-category="education">
+                <div class="certificate-preview">
+                    <div class="certificate-icon">☁️</div>
+                    <div class="certificate-badge">В процессе</div>
+                </div>
+                <h3>DevOps и облачные технологии</h3>
+                <p class="achievement-type">Kubernetes, RabbitMQ, CloudFlare</p>
+                <p class="achievement-date">2024-2025</p>
+                <div class="achievement-status in-progress">В процессе</div>
+                <p class="project-description">Осваиваю Kubernetes, RabbitMQ, работаю с MariaDB, Redis, изучаю облачные платформы (Cloudflare, GCP).</p>
+            </div>
+
+            <!-- Фотографии с мероприятий -->
+            <div class="achievement-card" data-category="competitions">
+                <div class="certificate-preview photo-preview">
+                    <img src="avords/photo_1_2025-06-30_01-46-19.jpg" alt="Мероприятие 1" class="photo-thumbnail">
+                    <div class="certificate-badge">Фото</div>
+                </div>
+                <h3>Конкурс профмастерства</h3>
+                <p class="achievement-type">Участие в мероприятии</p>
+                <p class="achievement-date">2024</p>
+                <div class="achievement-status">Участник</div>
+                <button class="view-certificate" data-file="avords/photo_1_2025-06-30_01-46-19.jpg" data-type="image">
+                    Посмотреть фото
+                </button>
+            </div>
+
+            <div class="achievement-card" data-category="competitions">
+                <div class="certificate-preview photo-preview">
+                    <img src="avords/photo_2_2025-06-30_01-46-19.jpg" alt="Мероприятие 2" class="photo-thumbnail">
+                    <div class="certificate-badge">Фото</div>
+                </div>
+                <h3>Техническая олимпиада</h3>
+                <p class="achievement-type">Командная работа</p>
+                <p class="achievement-date">2024</p>
+                <div class="achievement-status">Участник</div>
+                <button class="view-certificate" data-file="avords/photo_2_2025-06-30_01-46-19.jpg" data-type="image">
+                    Посмотреть фото
+                </button>
+            </div>
+
+            <div class="achievement-card" data-category="competitions">
+                <div class="certificate-preview photo-preview">
+                    <img src="avords/photo_3_2025-06-30_01-46-19.jpg" alt="Мероприятие 3" class="photo-thumbnail">
+                    <div class="certificate-badge">Фото</div>
+                </div>
+                <h3>IT-конференция</h3>
+                <p class="achievement-type">Презентация проекта</p>
+                <p class="achievement-date">2024</p>
+                <div class="achievement-status">Участник</div>
+                <button class="view-certificate" data-file="avords/photo_3_2025-06-30_01-46-19.jpg" data-type="image">
+                    Посмотреть фото
+                </button>
+            </div>
+
+            <div class="achievement-card" data-category="competitions">
+                <div class="certificate-preview photo-preview">
+                    <img src="avords/photo_4_2025-06-30_01-46-19.jpg" alt="Мероприятие 4" class="photo-thumbnail">
+                    <div class="certificate-badge">Фото</div>
+                </div>
+                <h3>Хакатон разработчиков</h3>
+                <p class="achievement-type">Создание MVP</p>
+                <p class="achievement-date">2024</p>
+                <div class="achievement-status">Участник</div>
+                <button class="view-certificate" data-file="avords/photo_4_2025-06-30_01-46-19.jpg" data-type="image">
+                    Посмотреть фото
+                </button>
+            </div>
+
+            <div class="achievement-card" data-category="competitions">
+                <div class="certificate-preview photo-preview">
+                    <img src="avords/photo_5_2025-06-30_01-46-19.jpg" alt="Мероприятие 5" class="photo-thumbnail">
+                    <div class="certificate-badge">Фото</div>
+                </div>
+                <h3>Выставка достижений</h3>
+                <p class="achievement-type">Демонстрация проектов</p>
+                <p class="achievement-date">2024</p>
+                <div class="achievement-status">Участник</div>
+                <button class="view-certificate" data-file="avords/photo_5_2025-06-30_01-46-19.jpg" data-type="image">
+                    Посмотреть фото
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal для просмотра сертификатов -->
+    <div class="certificate-modal" id="certificateModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <iframe id="certificateFrame" src="" style="display: none;"></iframe>
+                <img id="certificateImage" src="" alt="Сертификат" style="display: none;">
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/achievements.js"></script>
+</body>
+
+</html>

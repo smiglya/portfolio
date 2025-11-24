@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсовая работа - Аносов Артём</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/coursework.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Аносов Артём</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="practice.html" class="nav-link">Практика</a>
+                <a href="#" class="nav-link active">Курсовая</a>
+                <a href="achievements.html" class="nav-link">Достижения</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="coursework-container">
+        <!-- Заголовок с анимацией -->
+        <header class="coursework-header">
+            <div class="header-content">
+                <h1 class="animated-title">
+                    <span class="title-line">Курсовая работа</span>
+                    <span class="title-subtitle">Построение ИС для авиакомпании</span>
+                </h1>
+                <div class="header-meta">
+                    <div class="meta-chip">
+                        <span class="chip-icon">✈️</span>
+                        <span>Авиационная отрасль</span>
+                    </div>
+                    <div class="meta-chip">
+                        <span class="chip-icon">🎯</span>
+                        <span>UML моделирование</span>
+                    </div>
+                    <div class="meta-chip">
+                        <span class="chip-icon">💼</span>
+                        <span>Бизнес-процессы</span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-animation">
+                <div class="floating-element" data-speed="2">📋</div>
+                <div class="floating-element" data-speed="3">💻</div>
+                <div class="floating-element" data-speed="1.5">🔍</div>
+            </div>
+        </header>
+
+        <!-- Навигационные карточки -->
+        <section class="navigation-cards">
+            <div class="card-grid">
+                <div class="nav-card" data-target="context-diagram">
+                    <div class="card-icon">🌐</div>
+                    <h3>Контекстная диаграмма</h3>
+                    <p>Общий вид ИС авиакомпании и взаимодействие с внешними системами</p>
+                    <div class="card-progress">
+                        <div class="progress-bar" data-progress="100"></div>
+                    </div>
+                    <span class="card-status completed">Завершено</span>
+                </div>
+
+                <div class="nav-card" data-target="decomposition">
+                    <div class="card-icon">🔄</div>
+                    <h3>Декомпозиция</h3>
+                    <p>Разложение системы на подсистемы управления рейсами и бронирования</p>
+                    <div class="card-progress">
+                        <div class="progress-bar" data-progress="100"></div>
+                    </div>
+                    <span class="card-status completed">Завершено</span>
+                </div>
+
+                <div class="nav-card" data-target="uml-diagrams">
+                    <div class="card-icon">📐</div>
+                    <h3>UML диаграммы</h3>
+                    <p>Диаграммы классов, вариантов использования и активности для авиасистемы</p>
+                    <div class="card-progress">
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                    <span class="card-status in-progress">В работе</span>
+                </div>
+
+                <div class="nav-card" data-target="prototypes">
+                    <div class="card-icon">🎨</div>
+                    <h3>Прототипы</h3>
+                    <p>Макеты интерфейсов для персонала и пассажиров авиакомпании</p>
+                    <div class="card-progress">
+                        <div class="progress-bar" data-progress="75"></div>
+                    </div>
+                    <span class="card-status in-progress">В работе</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Основной контент -->
+        <main class="coursework-content">
+            <!-- Контекстная диаграмма -->
+            <section id="context-diagram" class="content-section">
+                <div class="section-header">
+                    <h2>
+                        <span class="section-number">01</span> Контекстная диаграмма
+                    </h2>
+                </div>
+
+                <div class="diagram-container">
+                    <div class="diagram-image">
+                        <img src="Kurs/Контекстная диаграмма.png" alt="Контекстная диаграмма" class="diagram-img">
+                    </div>
+                </div>
+
+                <div class="section-description">
+                    <h3>Описание</h3>
+                    <p>
+                        Контекстная диаграмма представляет информационную систему авиакомпании как единое целое и показывает её взаимодействие с внешними сущностями: пассажирами, персоналом, регулирующими органами, партнёрскими авиакомпаниями и системами бронирования.
+                    </p>
+                    <div class="key-features">
+                        <h4>Ключевые особенности:</h4>
+                        <ul>
+                            <li>Управление расписанием рейсов и бронированием билетов</li>
+                            <li>Интеграция с системами аэропортов и диспетчерскими службами</li>
+                            <li>Автоматическое формирование отчётности для регулирующих органов</li>
+                            <li>Многоуровневый доступ для различных категорий персонала</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Декомпозиция -->
+            <section id="decomposition" class="content-section">
+                <div class="section-header">
+                    <h2>
+                        <span class="section-number">02</span> Функциональная декомпозиция
+                    </h2>
+                </div>
+
+                <div class="decomposition-container">
+                    <div class="diagram-image">
+                        <img src="Kurs/Диаграмма дикомпозиции.png" alt="Диаграмма декомпозиции" class="diagram-img">
+                    </div>
+                </div>
+
+                <div class="section-description">
+                    <h3>Описание декомпозиции</h3>
+                    <p>
+                        Функциональная декомпозиция показывает иерархическое разложение информационной системы авиакомпании на основные подсистемы: управление рейсами, бронирование и продажа билетов, управление персоналом, техническое обслуживание воздушных судов и финансовая
+                        отчётность. Каждый модуль обеспечивает определённую область бизнес-процессов авиакомпании.
+                    </p>
+                </div>
+            </section>
+
+            <!-- UML диаграммы -->
+            <section id="uml-diagrams" class="content-section">
+                <div class="section-header">
+                    <h2>
+                        <span class="section-number">03</span> UML диаграммы
+                    </h2>
+                </div>
+
+                <div class="uml-container">
+                    <div class="uml-diagrams-grid">
+                        <div class="uml-diagram-item">
+                            <h4>UML Диаграмма 1</h4>
+                            <div class="diagram-image">
+                                <img src="Kurs/UML 1.png" alt="UML Диаграмма 1" class="diagram-img">
+                            </div>
+                        </div>
+
+                        <div class="uml-diagram-item">
+                            <h4>UML Диаграмма 2</h4>
+                            <div class="diagram-image">
+                                <img src="Kurs/UML 2.png" alt="UML Диаграмма 2" class="diagram-img">
+                            </div>
+                        </div>
+
+                        <div class="uml-diagram-item">
+                            <h4>UML Диаграмма 3</h4>
+                            <div class="diagram-image">
+                                <img src="Kurs/UML 3.png" alt="UML Диаграмма 3" class="diagram-img">
+                            </div>
+                        </div>
+
+                        <div class="uml-diagram-item">
+                            <h4>UML Диаграмма 4</h4>
+                            <div class="diagram-image">
+                                <img src="Kurs/UML 4.png" alt="UML Диаграмма 4" class="diagram-img">
+                            </div>
+                        </div>
+
+                        <div class="uml-diagram-item">
+                            <h4>UML Диаграмма 6</h4>
+                            <div class="diagram-image">
+                                <img src="Kurs/UML 6.png" alt="UML Диаграмма 6" class="diagram-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Прототипы -->
+            <section id="prototypes" class="content-section">
+                <div class="section-header">
+                    <h2>
+                        <span class="section-number">04</span> Прототипы интерфейса
+                    </h2>
+
+                </div>
+
+                <div class="prototypes-grid">
+                    <div class="prototype-card" onclick="openPrototype('main-interface')">
+                        <div class="prototype-preview">
+                            <div class="preview-browser">
+                                <div class="browser-header">
+                                    <div class="browser-buttons">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="browser-url">aeroflot-system.ru</div>
+                                </div>
+                                <div class="browser-content">
+                                    <div class="mock-navbar">Навигация</div>
+                                    <div class="mock-content">
+                                        <div class="mock-table">
+                                            <div class="table-row header">Рейс | Маршрут | Статус</div>
+                                            <div class="table-row">SU123 | Москва-СПб | ✈️</div>
+                                            <div class="table-row">SU456 | СПб-Сочи | 🛬</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prototype-info">
+                            <h4>Система бронирования</h4>
+                            <p>Основной интерфейс для поиска и бронирования билетов</p>
+                        </div>
+                    </div>
+
+                    <div class="prototype-card" onclick="openPrototype('edit-form')">
+                        <div class="prototype-preview">
+                            <div class="preview-browser">
+                                <div class="browser-header">
+                                    <div class="browser-buttons">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="browser-url">../управление-рейсами</div>
+                                </div>
+                                <div class="browser-content">
+                                    <div class="mock-form">
+                                        <div class="form-field">Номер рейса: ____</div>
+                                        <div class="form-field">Маршрут: [Выбор]</div>
+                                        <div class="form-field">Время вылета: ____</div>
+                                        <div class="form-buttons">[Сохранить] [Отмена]</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prototype-info">
+                            <h4>Управление рейсами</h4>
+                            <p>Интерфейс для планирования и редактирования расписания</p>
+                        </div>
+                    </div>
+
+                    <div class="prototype-card" onclick="openPrototype('dashboard')">
+                        <div class="prototype-preview">
+                            <div class="preview-browser">
+                                <div class="browser-header">
+                                    <div class="browser-buttons">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="browser-url">../отчетность</div>
+                                </div>
+                                <div class="browser-content">
+                                    <div class="mock-dashboard">
+                                        <div class="chart-placeholder">📊 График загрузки</div>
+                                        <div class="stats-grid">
+                                            <div class="stat-box">85 рейсов</div>
+                                            <div class="stat-box">92% заполненность</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prototype-info">
+                            <h4>Аналитическая панель</h4>
+                            <p>Статистика полётов и финансовые показатели</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+    </div>
+
+    <!-- Модальные окна -->
+    <div class="modal" id="diagramModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div id="modalDiagramContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="prototypeModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div id="prototypeViewer"></div>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/coursework.js"></script>
+</body>
+
+</html>

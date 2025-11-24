@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Аносов Артём</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Главная (Обо мне)</a></li>
+                <li><a href="achievements.html" class="nav-link">Достижения</a></li>
+                <li><a href="coursework.html" class="nav-link">Курсовая</a></li>
+                <li><a href="practice.html" class="nav-link">Практика</a></li>
+                <li><a href="contacts.html" class="nav-link active">Контактная информация</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contacts-container">
+            <!-- Header Section -->
+            <section class="contacts-header">
+                <h1>Контактная информация</h1>
+                <p class="contacts-subtitle">Свяжитесь со мной или найдите информацию о колледже</p>
+            </section>
+
+            <!-- Contact Grid -->
+            <section class="contact-grid">
+                <!-- Personal Contacts -->
+                <div class="contact-card personal-card">
+                    <h2>Личные контакты</h2>
+                    <div class="current-projects">
+                        <h3>🚀 Текущие проекты</h3>
+                        <p>Активно изучаю <strong>PHP 8+, Symfony 5+, Doctrine</strong> для реализации веб-проектов. Разрабатываю расширение для парсинга данных (для обучения нейронной сети на TensorFlow).</p>
+                        <p><strong>Технологии:</strong> MariaDB, Redis, RabbitMQ, Kubernetes, Cloudflare, GCP</p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <h3>Telegram</h3>
+                                <p>@Smiglya</p>
+                                <a href="https://t.me/Smiglya" target="_blank" class="contact-link">Написать</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <p>+7-965-202-52-34</p>
+                                <a href="https://wa.me/79652025234" target="_blank" class="contact-link">Написать</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-details">
+                                <h3>GitHub</h3>
+                                <p>Портфолио проектов</p>
+                                <a href="https://github.com/smiglya" target="_blank" class="contact-link">Перейти</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>petr.artemov.06@gmail.com</p>
+                                <a href="mailto:petr.artemov.06@gmail.com" class="contact-link">Написать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- College Contacts -->
+                <div class="contact-card college-card">
+                    <h2>Московский колледж транспорта при РУТ МИИТ</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">🏢</div>
+                            <div class="contact-details">
+                                <h3>Адрес</h3>
+                                <p>г. Москва, 129626, Кучин переулок, дом 14 (1 корпус МКТ, ауд. 1215)</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3>Телефоны</h3>
+                                <p>(495) 687-64-31, 686-50-00, (499) 262-26-98</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>priem@mkgt.ru</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🌐</div>
+                            <div class="contact-details">
+                                <h3>Сайт</h3>
+                                <p>www.miit.ru</p>
+                                <a href="https://www.miit.ru" target="_blank" class="contact-link">Перейти</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="contact-form-section">
+                <h2>Форма обратной связи</h2>
+                <p class="form-description">Отправьте мне сообщение, и я обязательно отвечу!</p>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Тема сообщения</label>
+                        <select id="subject" name="subject">
+                            <option value="">Выберите тему</option>
+                            <option value="collaboration">Сотрудничество</option>
+                            <option value="job">Предложение работы</option>
+                            <option value="question">Вопрос</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Опишите ваш вопрос или предложение..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <span class="checkmark"></span>
+                            Я согласен с обработкой персональных данных
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Отправить сообщение</span>
+                        <span class="btn-loader" style="display: none;">⏳</span>
+                    </button>
+                </form>
+            </section>
+
+            <!-- Map Section -->
+            <section class="map-section">
+                <h2>Расположение колледжа</h2>
+                <div class="map-container">
+                    <div class="yandex-map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?text=Москва%2C%20Кучин%20переулок%2C%2014&z=16&l=map" width="100%" height="400" frameborder="0" style="border-radius: 10px;">
+                        </iframe>
+                    </div>
+                    <div class="map-details">
+                        <p><strong>Адрес:</strong> г. Москва, 129626, Кучин переулок, дом 14 (1 корпус МКТ, ауд. 1215)</p>
+                        <p><strong>Ближайшее метро:</strong> Алексеевская, ВДНХ</p>
+                        <p><strong>Время работы:</strong> Пн-Пт 8:00-18:00, Сб 9:00-15:00</p>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Аносов Артём. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/contacts.js"></script>
+</body>
+
+</html>
